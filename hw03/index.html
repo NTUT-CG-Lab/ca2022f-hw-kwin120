@@ -195,7 +195,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      <h1>作業 01</h1>
+      <h1>作業 0</h1>
     </div>
   </div>
 
@@ -228,12 +228,12 @@
         <tr>
           <td rowspan="7" id="myTotal"></td>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
-          <td id='m1'>2</td>
+          <td id='m1'>3</td>
           <td>Simple baseline - 綁定參數 (AngleX、AngleY、AngleZ)</td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
-          <td id='m2'>6</td>
+          <td id='m2'>4</td>
           <td>Medium baseline - 綁定參數 (BrowLY、BrowRY、BrowLX、BrowRX) </td>
         </tr>
         <tr>
@@ -242,8 +242,8 @@
           <td>Strong baseline - 標準參數、特定參數控制 </td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
-          <td id='m4'>2</td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td id='m4'>1</td>
           <td>Strong baseline - 觸碰身體會發出聲音 </td>
         </tr>
       </table>
@@ -295,6 +295,10 @@
 
     if (d3.select("#myCheckbox3").property("checked")){
       score += parseInt(d3.select('#m3').html());   
+    }
+    
+    if (d3.select("#myCheckbox4").property("checked")){
+      score += parseInt(d3.select('#m4').html());   
     }
 
     d3.select("#myTotal").html(score);    
